@@ -1,0 +1,133 @@
+.background {
+  background-color: #e9e5e5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.container {
+  box-shadow: 0px 0px 30px -10px;
+  width: min(24em, 99%);
+  height: min(45em, 99%);
+  border-radius: 1em;
+  padding:0;
+}
+
+// music controller
+.music-player-container {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: white;
+  width:100%;
+  height: 50%;  
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding-top: 1em;
+  font-size: 1.1em;
+  color: red;
+}
+
+.music-playing-title {
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  padding: 10px 0px 10px;
+}
+
+.music-image {
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+}
+
+.music-controller {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 0px;
+}
+
+.music-controller > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.music-controller mat-icon {
+  transform: scale(1.2);
+  transition: transform 0.5;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+// progress bar
+.slider {
+  margin-top: 3em;
+  width: 85%;
+
+}
+
+// lower container
+
+.music-list-container {
+  height: 50%;
+  padding-top: 1em;
+  overflow: auto;
+}
+
+.song-container {
+  margin: 0em 0.5em 0em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(210, 205, 205);
+  }
+}
+
+.song-container img {
+  width: 3em;
+  height: 3em;
+}
+.song-info-container {
+  display: flex;
+
+  margin-right: auto;
+}
+.song-info {
+  padding: 0.3em;
+
+  & .song-name {
+    font-weight: bold;
+  }
+  & .singer-name {
+    font-weight: 300;
+    font-style: italic;
+  }
+}
+
+.song-menu {
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgb(169, 164, 164);
+  }
+}
+
