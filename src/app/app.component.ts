@@ -66,13 +66,13 @@ export class AppComponent {
     let song1 = new SongComponent();
     song1.songName = 'Hello ba gia`';
     song1.singer = 'Micheal learn to rock';
-    song1.url = '../assets/music/1.mp3';
+    song1.url = '/assets/music/1.mp3';
     song1.imgURL =
       'https://vir.com.vn/stores/news_dataimages/hung/022014/20/09/michael-learns-to-rock.jpg';
 
     let song2 = new SongComponent();
     song2.singer = 'Jack';
-    song2.url = '../assets/music/2.mp3';
+    song2.url = '/assets/music/2.mp3';
     song2.songName = 'hello ong gia';
     song2.imgURL =
       'https://image.thanhnien.vn/w1024/Uploaded/2022/znetns/2022_04_11/jack-new-2274.jpg';
